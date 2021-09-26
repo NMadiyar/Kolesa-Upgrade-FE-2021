@@ -83,14 +83,17 @@ h6 {
 .modal {
     width: 100%;
     height: 100%;
-    background: #1c1819;
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .container {
+    position: relative;
+    margin: auto;
     background: #fff;
     border-radius: 16px;
     display: flex;
@@ -149,7 +152,7 @@ h6 {
     font-size: 20px;
     line-height: 32px;
     color: #1c1819;
-    margin: 8px 0;
+    margin: 0 0 8px 0;
 }
 
 .modal__content__btn {
@@ -201,6 +204,10 @@ h6 {
     justify-content: center;
 }
 
+.modal__content__radio:first-child {
+    margin-left: 0;
+}
+
 .modal__content__radio input[type=radio] {
     display: none;
 }
@@ -229,6 +236,7 @@ h6 {
 .modal__content__radio input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
+    border: none;
 }
 
 .modal__content__blockSize {
@@ -239,12 +247,15 @@ h6 {
 
 .modal__content__size {
     display: flex;
+    margin: 0 4px;
     width: 40px;
     height: 40px;
-    margin: 0 8px;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+}
+
+.modal__content__size:first-child {
+    margin-left: 0;
 }
 
 .modal__content__size input[type=radio] {
@@ -274,6 +285,7 @@ h6 {
 .modal__content__size input[type=radio]:checked + label {
     background: #d6ecfb;
     color: #1c1819;
+    border: none;
 }
 
 .modal__content__details {
