@@ -19,7 +19,10 @@
     "simple-git-hooks": "^2.6.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
-    "vite": "^2.5.4"
+    "vite": "^2.5.4",
+    "@commitlint/cli": "^13.1.0",
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.1"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
@@ -36,5 +39,13 @@
     ".editorconfig": [
       "eclint fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "config/git/commitizen.js"
+    }
   }
 }
