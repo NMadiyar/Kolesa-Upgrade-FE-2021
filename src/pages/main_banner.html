@@ -7,20 +7,23 @@
 </head>
 <body>
 <header class="header">
+    <div class="header__block">
     <div>
         <img src="../assets/KolesaGroup.png" height="35" width="215" alt="Kolesa logo">
     </div>
     <div class="header__search">
-        <label for="search"><button><img class="header__search__img" src="../assets/search-big.svg" alt="search" height="24" width="24"></button></label>
+        <label for="search"><button class="header__search__img" type="button" ><img src="../assets/search-big.svg" alt="search" height="24" width="24"></button></label>
         <input name="search" id="search" class="header__input" type="search" placeholder="Поиск">
+    </div>
     </div>
     <div class="header__info">
         <div>
-            <img class="header__avatar" src="../assets/Mask%20Group.png" alt="avatar" width="44" height="44">
+            <button class="header__avatar"> <img  src="../assets/Mask%20Group.png" alt="avatar" width="44" height="44"></button>
+
         </div>
         <div>
-            <p class="header__avatar__name">Мортиджан</p>
-            <p class="header__avatar__pts">300 баллов</p>
+            <button class="header__avatar__name">Мортиджан</button>
+            <button class="header__avatar__pts">300 баллов</button>
         </div>
     </div>
 </header>

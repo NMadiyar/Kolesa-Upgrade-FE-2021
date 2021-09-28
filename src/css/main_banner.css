@@ -86,13 +86,28 @@ h6 {
     margin: 32px 40px 24px 32px;
 }
 
+.header__block {
+    display: flex;
+    align-items: center;
+}
+
 .header__search {
     position: relative;
+    margin-left: 66px;
 }
 
 .header__search__img {
     position: absolute;
-    margin: 10px 0 10px 16px;
+    width: 24px;
+    height: 24px;
+    margin: 10px 16px 10px 16px;
+    background: #f2f2f3;
+    border: none;
+    transition: 0.2s linear;
+}
+
+.header__search__img:hover {
+    transform: scale(1.2);
 }
 
 .header__input {
@@ -117,22 +132,45 @@ h6 {
 
 .header__avatar {
     margin-right: 16px;
+    border: none;
+    background: none;
+    transition: 0.2s linear;
+}
+
+.header__avatar:hover {
+    transform: scale(1.2);
 }
 
 .header__avatar__name {
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     color: #2a81dd;
+    border: none;
+    background: none;
+    transition: 0.2s linear;
+}
+
+.header__avatar__name:hover {
+    transform: scale(1.2);
 }
 
 .header__avatar__pts {
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 20px;
     color: #1c1819;
+    border: none;
+    background: none;
+    transition: 0.2s linear;
+}
+
+.header__avatar__pts:hover {
+    transform: scale(1.2);
 }
