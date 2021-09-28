@@ -1,8 +1,359 @@
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+}
+
+.modal__image {
+    margin: 56px 24px 0 56px;
+}
+
+.modal__image__variations {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__image__variations input[type=radio] {
+    display: none;
+}
+
+.modal__image__variations label {
+    margin: 0 8px;
+}
+
+.modal__image__variations label:hover {
+    border: 1px solid #2a81dd;
+    border-radius: 8px;
+}
+
+.modal__image__variations input[type=radio]:checked + label {
+    border: 1px solid #2a81dd;
+    border-radius: 8px;
+}
+
+.modal__content {
+    margin-top: 64px;
+}
+
+.modal__content__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    margin: 8px 0;
+}
+
+.modal__content__block {
+    display: flex;
+}
+
+.modal__content__price {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    margin: 0 0 8px 0;
+}
+
+.modal__content__btn {
+    background: #2a81dd;
+    box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+    border-radius: 8px;
+    border: none;
+    width: 184px;
+    height: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    justify-content: center;
+    color: white;
+    padding: 6px 0;
+}
+
+.modal__content__balance {
+    margin: 16px 56px 0 190px;
+    width: 196px;
+    height: 68px;
+    background: #f0fafd;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__content__balance__text {
+    margin-top: 8px;
+    margin-left: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888b94;
+}
+
+.modal__content__balance__img {
+    margin: 5px 16px 5px 23px;
+}
+
+.modal__content__balance__pts {
+    margin: 4px 0 8px 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__content__text {
+    margin: 24px 0 8px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__content__blockRadio {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal__content__radio {
+    width: 96px;
+    height: 40px;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content__radio:first-child {
+    margin-left: 0;
+}
+
+.modal__content__radio input[type=radio] {
+    display: none;
+}
+
+.modal__content__radio label img {
+    margin-right: 8px;
+}
+
+.modal__content__radio label {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    user-select: none;
+    cursor: pointer;
+    color: #2a81dd;
+}
+
+.modal__content__radio label:hover {
+    background: #d6ecfb;
+}
+
+.modal__content__radio input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
+    border: none;
+}
+
+.modal__content__blockSize {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal__content__size {
+    display: flex;
+    margin: 0 4px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content__size:first-child {
+    margin-left: 0;
+}
+
+.modal__content__size input[type=radio] {
+    display: none;
+}
+
+.modal__content__size label {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    user-select: none;
+    cursor: pointer;
+    color: #2a81dd;
+}
+
+.modal__content__size label:hover {
+    background: #d6ecfb;
+    color: #1c1819;
+}
+
+.modal__content__size input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
+    border: none;
+}
+
+.modal__content__details {
+    margin: 24px 0 24px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__content__details h2 {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.modal__content__howTo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1c1819;
+}
+
+.modal__content__howTo h2 {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.modal__content__howTo p {
+    margin-bottom: 64px;
+}
+
+.btn {
+    width: 32px;
+    height: 32px;
+    margin: 24px 24px 0 0;
+    background: none;
+    border: none;
+    justify-content: end;
 }
