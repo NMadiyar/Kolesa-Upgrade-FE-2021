@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 40px 24px 32px;
+}
+
+.header__search {
+    position: relative;
+}
+
+.header__search__img {
+    position: absolute;
+    margin: 10px 0 10px 16px;
+}
+
+.header__input {
+    width: 308px;
+    height: 44px;
+    background: #f2f2f3;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #888b94;
+    border: none;
+    padding: 8px 0 8px 56px;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar {
+    margin-right: 16px;
+}
+
+.header__avatar__name {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2a81dd;
+}
+
+.header__avatar__pts {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #1c1819;
+}
