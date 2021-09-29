@@ -6,7 +6,9 @@
     <title>Главная с баннером</title>
 </head>
 <body>
+<div class="container">
 <header class="header">
+
     <div class="header__block">
     <div>
         <img src="../assets/KolesaGroup.png" height="35" width="215" alt="Kolesa logo">
@@ -27,6 +29,51 @@
         </div>
     </div>
 </header>
+</div>
 
+
+<div class="container">
+<main class="main">
+
+    <nav class="nav">
+        <a class="nav__link" href="#">Оргсхема</a>
+        <a class="nav__link" href="#">Kolesa <span class="nav__link-bold">Team</span></a>
+        <a class="nav_link nav__link-bold" href="#">Kolesa Shop</a>
+        <a class="nav__link" href="#">Картина компании</a>
+        <a class="nav__link" href="#">Новости</a>
+        <a class="nav__link" href="#">Education</a>
+        <a class="nav__link" href="#">Guidelines</a>
+        <a class="nav__link" href="#">Библиотека</a>
+        <a class="nav__link" href="#">FAQ</a>
+    </nav>
+    <div class="main__content">
+        <img class="main__content__banner" src="../assets/image.jpg" alt="banner" width="1038" height="335">
+        <div class="main__buttons">
+            <button type="button" class="main__btn main__btn-get"><img class="main__btn__image" src="../assets/plus.svg" alt="plus" height="41" width="40">Получить баллы</button>
+            <button type="button" class="main__btn main__btn-question"><img class="main__btn__image" src="../assets/question.png" alt="question" width="40" height="41">Как получить баллы?</button>
+            <button type="button" class="main__btn main__btn-gift"><img class="main__btn__image" src="../assets/gift.png" alt="gift" height="41" width="40">Подарить баллы</button>
+        </div>
+
+
+        <div class="main__content__blockRadio">
+            <div class="main__content__radio">
+                <input type="radio" id="radio1" name="radio" value="1" checked>
+                <label for="radio1">Все товары</label>
+            </div>
+            <div class="main__content__radio">
+                <input type="radio" id="radio2" name="radio" value="2">
+                <label for="radio2">Одежда</label>
+            </div>
+            <div class="main__content__radio">
+                <input type="radio" id="radio3" name="radio" value="3">
+                <label for="radio3">Аксессуары</label>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+    </div>
 </body>
 </html>

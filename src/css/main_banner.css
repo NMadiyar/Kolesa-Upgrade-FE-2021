@@ -82,8 +82,12 @@ h6 {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    margin: 32px 40px 24px 32px;
+    margin: 32px auto 0 auto;
+}
+
+.container {
+    max-width: 1368px;
+    margin: auto;
 }
 
 .header__block {
@@ -125,9 +129,18 @@ h6 {
     padding: 8px 0 8px 56px;
 }
 
+.header__input:active {
+    border: 4px solid rgba(71, 71, 175, 0.85);
+}
+
+.header__input:focus {
+    border: 4px solid rgba(71, 71, 175, 0.85);
+}
+
 .header__info {
     display: flex;
     align-items: center;
+    margin-left: 584px;
 }
 
 .header__avatar {
@@ -135,6 +148,7 @@ h6 {
     border: none;
     background: none;
     transition: 0.2s linear;
+    padding: 0;
 }
 
 .header__avatar:hover {
@@ -145,6 +159,7 @@ h6 {
     display: block;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+    padding: 0;
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
@@ -169,8 +184,141 @@ h6 {
     border: none;
     background: none;
     transition: 0.2s linear;
+    padding: 0;
 }
 
 .header__avatar__pts:hover {
     transform: scale(1.2);
+}
+
+.main {
+    display: flex;
+    margin: 26px auto 0 auto;
+}
+
+.nav {
+    width: 215px;
+    margin-right: 66px;
+}
+
+.nav__link {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1c1819;
+    margin: 26px 0;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+.nav__link:first-child {
+    margin-top: 0;
+}
+
+.nav__link-bold:hover,
+.nav__link:hover {
+    color: #4dabff;
+}
+
+.nav__link-bold {
+    font-weight: 600;
+}
+
+.main__content {
+    width: 1038px;
+}
+
+.main__content__banner {
+    margin-bottom: 24px;
+}
+
+.main__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.main__btn {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 76px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1c1819;
+    padding: 0;
+    transition: 0.2s linear;
+}
+
+.main__btn:hover {
+    border: 2px solid #38ff93;
+}
+
+.main__btn__image {
+    margin: 0 24px 0 24px;
+}
+
+.main__btn-get {
+    background: #eff8eb;
+}
+
+.main__btn-question {
+    background: #fffae7;
+}
+
+.main__btn-gift {
+    background: #e9f2fb;
+}
+
+.main__content__blockRadio {
+    display: flex;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.main__content__radio {
+    margin: 0 5px;
+}
+
+.main__content__radio:first-child {
+    margin-left: 0;
+}
+
+.main__content__radio input[type=radio] {
+    display: none;
+}
+
+.main__content__radio label {
+    width: 120px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    user-select: none;
+    cursor: pointer;
+    color: #2a81dd;
+}
+
+.main__content__radio label:hover {
+    background: #d6ecfb;
+}
+
+.main__content__radio input[type=radio]:checked + label {
+    background: #d6ecfb;
+    color: #1c1819;
+    border: none;
 }
