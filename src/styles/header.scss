@@ -1,17 +1,12 @@
 @import 'vars';
 
-.container {
-    max-width: 1368px;
-    margin: auto;
-}
-
 .header {
     display: flex;
 
     &__block {
         display: flex;
         align-items: center;
-        margin: 32px auto 0 0;
+        margin: 32px 0 0 0;
     }
 
     &__search {

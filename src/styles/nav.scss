@@ -1,0 +1,56 @@
+@import 'vars';
+
+.nav {
+    &__block {
+        margin: 26px 66px 0 0;
+        width: 215px;
+    }
+
+    &__link {
+        display: block;
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: $normalFont;
+        font-size: 16px;
+        line-height: 24px;
+        color: $primaryColor;
+        margin: 26px 0;
+        transition: 0.2s linear;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:hover {
+            color: $navColor;
+        }
+
+        &:focus {
+            display: flex;
+            align-items: center;
+        }
+
+        &-bold {
+            font-weight: $BoldFont;
+
+            &:hover {
+                color: $navColor;
+            }
+
+            &:focus {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-active {
+            border-radius: 10px;
+            margin-right: 8px;
+
+            &:focus {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
