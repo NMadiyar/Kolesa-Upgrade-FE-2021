@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'container';
 
 .nav {
     &__block {
@@ -7,7 +8,9 @@
     }
 
     &__link {
-        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         font-family: $primaryFont;
         font-style: normal;
         font-weight: $normalFont;
@@ -30,7 +33,7 @@
             align-items: center;
         }
 
-        &-bold {
+        &--bold {
             font-weight: $BoldFont;
 
             &:hover {
@@ -43,9 +46,10 @@
             }
         }
 
-        &-active {
+        &--active {
             border-radius: 10px;
             margin-right: 8px;
+            margin-left: -10px;
 
             &:focus {
                 display: flex;

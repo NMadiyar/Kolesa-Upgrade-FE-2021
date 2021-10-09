@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'container';
 
 .header {
     display: flex;
@@ -38,7 +39,7 @@
             font-weight: $normalFont;
             font-size: 18px;
             line-height: 28px;
-            color: #888b94;
+            color: $gray;
             border: none;
             padding: 8px 0 8px 56px;
 
@@ -82,7 +83,7 @@
         font-weight: $BoldFont;
         font-size: 14px;
         line-height: 24px;
-        color: #2a81dd;
+        color: $lightBlue;
         border: none;
         background: none;
         transition: 0.2s linear;

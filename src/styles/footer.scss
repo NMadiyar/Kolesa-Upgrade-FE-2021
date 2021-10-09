@@ -1,4 +1,5 @@
 @import 'vars.scss';
+@import 'container';
 
 .footer {
     background: $primaryColor;
@@ -17,7 +18,7 @@
         font-weight: $normalFont;
         font-size: 16px;
         line-height: 24px;
-        color: white;
+        color: $white;
         margin-bottom: 14px;
     }
 
@@ -29,7 +30,7 @@
         display: flex;
         justify-content: start;
 
-        &-instagram {
+        &--instagram {
             margin-right: 6px;
             border: none;
             background: none;
@@ -41,7 +42,7 @@
             }
         }
 
-        &-youtube {
+        &--youtube {
             border: none;
             background: none;
             padding: 0;
@@ -52,7 +53,7 @@
             }
         }
 
-        &-vk {
+        &--vk {
             border: none;
             background: none;
             margin-left: 6px;
@@ -76,7 +77,7 @@
             font-weight: $normalFont;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: $white;
         }
     }
 
@@ -96,13 +97,13 @@
         align-items: center;
         text-align: center;
         justify-content: center;
-        color: #2a81dd;
+        color: $lightBlue;
         margin-left: 50px;
         transition: 0.2s linear;
 
         &:hover {
-            background: #5cef5c;
-            color: #d6ffff;
+            background: $footerBtnBck;
+            color: $footerBtnCol;
         }
     }
 }
