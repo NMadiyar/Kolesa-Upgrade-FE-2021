@@ -5,7 +5,7 @@
         "browser": true
     },
     "rules": {
-        "max-len": ["error", 120, 4, { "ignoreComments": true }],
+        "max-len": ["error", 200, 4, { "ignoreComments": true }],
         "func-names": ["error", "never"],
         "indent": ["error", 4, { "SwitchCase": 1, "ignoredNodes": ["TemplateLiteral"] }],
         "key-spacing": ["error", { "align": "value" }],
