@@ -1,3 +1,3 @@
-import '../css/style.css';
+import '../styles/main.scss';
 
 document.querySelector('#app');

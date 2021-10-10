@@ -1,0 +1,109 @@
+@import 'vars.scss';
+@import 'container';
+
+.footer {
+    background: $primaryColor;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+
+    &__elements {
+        @include flexBetween;
+    }
+
+    &__text {
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: $normalFont;
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+        margin-bottom: 14px;
+    }
+
+    &__info {
+        margin: 20px 0 14px 0;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: start;
+
+        &--instagram {
+            margin-right: 6px;
+            border: none;
+            background: none;
+            padding: 0;
+            transition: 0.2s linear;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        &--youtube {
+            border: none;
+            background: none;
+            padding: 0;
+            transition: 0.2s linear;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        &--vk {
+            border: none;
+            background: none;
+            margin-left: 6px;
+            padding: 0;
+            transition: 0.2s linear;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 32px;
+
+        &__text {
+            font-family: $primaryFont;
+            font-style: normal;
+            font-weight: $normalFont;
+            font-size: 14px;
+            line-height: 24px;
+            color: $white;
+        }
+    }
+
+    &__btn {
+        width: 150px;
+        height: 36px;
+        background: white;
+        box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
+        border-radius: 8px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: $lightBlue;
+        margin-left: 50px;
+        transition: 0.2s linear;
+
+        &:hover {
+            background: $footerBtnBck;
+            color: $footerBtnCol;
+        }
+    }
+}
