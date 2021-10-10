@@ -101,8 +101,9 @@
     }
 
     &--clothes {
-        @include flexBetween;
-
+        display: flex;
+        justify-content: left;
+        align-items: center;
         flex-wrap: wrap;
         gap: 24px;
 
