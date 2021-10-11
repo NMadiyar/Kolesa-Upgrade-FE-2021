@@ -137,6 +137,14 @@ const closeBtn = () => {
     });
 };
 
+const closeBtnModal = () => {
+    document.querySelector('.js_modal_btn').addEventListener('click', (e) => {
+        if (e.target.dataset.modalbtn) {
+            document.querySelector('.js_test').innerHTML = '';
+        }
+    });
+};
+
 const makeProductCard = (
     title,
     price,
@@ -187,6 +195,7 @@ document.querySelectorAll('.js_radio').forEach((button) => {
                         document.querySelector('.js_test').innerHTML += makeModalCard(title, price, details, img, id);
                         // eslint-disable-next-line no-use-before-define
                         closeBtn();
+                        closeBtnModal();
                     });
                 });
             });
@@ -217,6 +226,7 @@ document.querySelectorAll('.js_radio').forEach((button) => {
                         document.querySelector('.js_test').innerHTML += makeModalCard(title, price, details, img, id);
                         // eslint-disable-next-line no-use-before-define
                         closeBtn();
+                        closeBtnModal();
                     });
                 });
             });
@@ -254,6 +264,7 @@ document.querySelectorAll('.js_radio').forEach((button) => {
                         // eslint-disable-next-line no-use-before-define
                         document.querySelector('.js_test').innerHTML += makeModalCard(title, price, details, img, id);
                         closeBtn();
+                        closeBtnModal();
                     });
                 });
             });
@@ -298,7 +309,7 @@ const makeModalCard = (title, price, details, img, id) => ` <div data-key=${id} 
                 <div class="modal__block">
                     <div>
                         <h2 class="modal__price">${price} баллов</h2>
-                        <button class="modal__btn" type="button" >Заказать</button>
+                        <button data-modalbtn="modalBtn" class="modal__btn js_modal_btn" type="button" >Заказать</button>
                     </div>
                     <div class="modal__balance">
                         <div>
@@ -365,6 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.querySelector('.js_test').innerHTML += makeModalCard(title, price, details, img, id);
             closeBtn();
+            closeBtnModal();
         });
     });
 });
