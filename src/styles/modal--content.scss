@@ -1,0 +1,141 @@
+@import 'vars';
+@import 'container';
+
+.modal--info {
+    &__text {
+        margin: 24px 0 8px 0;
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primaryColor;
+    }
+
+    &__blockRadio {
+        display: flex;
+        font-size: 14px;
+        font-family: $primaryFont;
+    }
+
+    &__radio {
+        width: 96px;
+        height: 40px;
+        margin: 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        & input[type=radio] {
+            display: none;
+
+            &:checked + label {
+                background: $mainLab;
+                color: $primaryColor;
+                border: none;
+            }
+        }
+
+        & label {
+            display: flex;
+            padding: 8px;
+            align-items: center;
+            justify-content: center;
+            background: $white;
+            border-radius: 8px;
+            border: 1px solid rgba(28, 24, 25, 0.1);
+            user-select: none;
+            cursor: pointer;
+            color: $lightBlue;
+
+            &:hover {
+                background: $mainLab;
+            }
+
+            & img {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &__blockSize {
+        display: flex;
+        font-size: 14px;
+        font-family: $primaryFont;
+    }
+
+    &__size {
+        @include flexCenter;
+
+        margin: 0 4px;
+        width: 40px;
+        height: 40px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        & input[type=radio] {
+            display: none;
+
+            &:checked + label {
+                background: #d6ecfb;
+                color: #1c1819;
+                border: none;
+            }
+        }
+
+        & label {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            padding: 8px 16px;
+            align-items: center;
+            justify-content: center;
+            background: $white;
+            border-radius: 8px;
+            border: 1px solid rgba(28, 24, 25, 0.1);
+            user-select: none;
+            cursor: pointer;
+            color: $lightBlue;
+
+            &:hover {
+                background: $mainLab;
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &__details {
+        margin: 24px 0 24px 0;
+        font-family: $primaryFont;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primaryColor;
+
+        & h2 {
+            font-weight: $BoldFont;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__howTo {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primaryColor;
+
+        & h2 {
+            font-weight: $BoldFont;
+            margin-bottom: 4px;
+        }
+
+        & p {
+            margin-bottom: 64px;
+        }
+    }
+}
